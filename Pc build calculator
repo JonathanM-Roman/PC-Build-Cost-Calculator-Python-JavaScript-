@@ -1,0 +1,26 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+# Example component prices
+database = {
+    "CPU": 300,
+    "GPU": 600,
+    "RAM": 120,
+    "Storage": 150,
+    "Motherboard": 200,
+    "Power Supply": 100
+}
+
+@app.route('/')
+def index():
+    return render_template("index.html", components=database)
+
+@app.route('/calculate', methods=['POST'])
+def calculate():
+    selected_components = request.form.getlist("components")
+    total_price = sum(database[comp] for comp in selected_components)
+    return f"Total Cost: ${total_price}"
+
+if __name__ == "__main__":
+    app.run(debug=True)
