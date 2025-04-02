@@ -1,5 +1,12 @@
-# PC-Build-Cost-Calculator-Python-JavaScript-
+## **5️⃣ PC Build Cost Calculator (Python/JavaScript) 🖥️**
+
+### **Description**
 A script that compares component prices and helps users budget for a PC build by pulling data from online sources.
+
+## Screenshot
+![Firewall Setup](screenshots/PC_Build_Cost_Calculator.PNG)
+
+
 ### **Tech Stack**
 - Python
 - Flask
@@ -8,7 +15,7 @@ A script that compares component prices and helps users budget for a PC build by
 ### **Installation & Usage**
 ```bash
 # Clone the repository
-git clone
+git clone https://github.com/JonathanM-Roman/PC-Build-Cost-Calculator-Python-JavaScript-.git
 cd PC-Build-Calculator
 
 # Install dependencies
